@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toko Buah</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a href="index.html" class="navbar-brand">pasar</a>
+		<button class="navbar-togler" type="button" data-toggle="collapse" data-target= "#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label= "toggle navigation">
+			<span class="navbar-togler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="home.php">Daftar Buah</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="tentang.html">Tentang Kami</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron">
+		<h1 class="display-4">pasar buah</h1>
+		<p class="lead">selamat datang anda belanja saya dapet uang</p>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+	<div class="card" style="width: 18rem;">
+		<img src="mangga.jpg" class="card-img-top" alt="..." >
+		<div class="card-body">
+			<h5 class="card-title">mangga </h5>
+			<p class="card-text">buah apel dari pegunungan segar yang segar</p>
+			<h4>jumlah pembeli : <span class="badge badge-success">120</span ></h4>
+			<button class="btn btn-primary">Beli</button>
+			
+		</div>
+	</div>
+		
+	</div>
+	
+		<div class="col-sm-4">
+	<div class="card" style="width: 18rem;">
+		<img src="apel11.jpg" class="card-img-top" alt="..." >
+		<div class="card-body">
+			<h5 class="card-title">apel </h5>
+			<p class="card-text">buah apel dari pegunungan segar yang segar</p>
+			<h4>jumlah pembeli : <span class="badge badge-success">120</span></h4>
+			<button class="btn btn-primary">Beli</button>
+		</div>
+	</div>
+		
+	</div>
+	<div class="col-sm-4">
+	<div class="card" style="width: 18rem;">
+		<img src="jeruk.jpg" class="card-img-top" alt="...">
+		<div class="card-body">
+			<h5 class="card-title">jeruk</h5>
+			<p class="card-text">buah apel dari pegunungan segar yang segar</p>
+			<h4>jumlah pembeli : <span class="badge badge-success">120</span></h4>
+
+
+			<button class="btn btn-primary">Beli</button>
+			<button style="float: right;" id="open">
+				read more....
+			</button>
+			<button style="float: right;" id="closed" hidden>
+				unread
+			</button>
+			<br/>
+			<p id="read" hidden>baaaaaa..</p>
+
+		</div>
+		
+	</div>
+</div>
+</div>
+		<footer class="backgroun-color: blue; color: white;"> 
+			<div class="footer-copyright text-center py-3">powered by <a href="#" style="color: black;"> Mr.X </a> | 2019 </div>
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script>
+			$('#open').click(function(){
+				$('#read').prop('hidden', false);
+				$('#closed').prop('hidden', false)
+				$('#open').prop('hidden', true)
+
+			})
+			$('#closed').click(function(){
+				$('#read').prop('hidden', true);
+				$('#closed').prop('hidden', true)
+				$('#open').prop('hidden', false)
+
+			})
+			
+				
+		</script>
+
+</body>
+</html>
